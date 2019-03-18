@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- for bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--bootstrap ends-->
+	<title>New Record</title>
+</head>
+<body>
+	<h1>New Record Entry</h1>
+<!--for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- bootstrap ends-->
+  <form action="/new_record.php" method="POST">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Date</label>
+    <input type="date" class="form-control" id="date" placeholder="DD//MM//YYYY">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Doctor's Registration Number</label>
+    <input type="text" class="form-control" id="rnumber" placeholder="xxxxxxxxxx">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Symptoms</label>
+    <input type="text" class="form-control" id="symptom" placeholder="ABC causing DEF problems">
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Ailments Found</label>
+    <input type="text" class="form-control" id="ailments" placeholder="ABC">
+  </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Medication Suggested</label>
+    <input type="text" class="form-control" id="medication" placeholder="XYZ">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Dosage</label>
+    <input type="text" class="form-control" id="dosage" placeholder="ABC">
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

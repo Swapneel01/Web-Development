@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- for bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--bootstrap ends-->
+	<title>Patient Sign Up</title>
+</head>
+<body>
+<!--for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- bootstrap ends-->
+  <form action="/patient_signup.php" method="POST">
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Patient's Email ID</label>
+    <input type="Email" class="form-control" id="username" placeholder="example@abc.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Select Password</label>
+    <input type="Password" class="form-control" id="pass" placeholder="xxxxxxxx">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name of the Patient</label>
+    <input type="name" class="form-control" id="name" placeholder="Mr/Mrs ABC">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Age of the Patient</label>
+    <input type="Number" class="form-control" id="age" placeholder="xx years">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Gender</label>
+    <select class="form-control" id="gender" value="1">
+      <option>Select from the list</option>
+      <option>Male</option>
+      <option>Female</option> 
+      <option>Others</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Blood Group</label>
+    <select class="form-control" id="bgroup" value="1">
+      <option>Select from the list</option>
+      <option>A+</option>
+      <option>A-</option>
+      <option>B+</option>
+      <option>B-</option>
+      <option>AB+</option>
+      <option>AB-</option>
+      <option>O+</option>
+      <option>O-</option>
+    </select>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Contact Number</label>
+    <input type="Number" class="form-control" id="contact" placeholder="xxxxxxxxxx">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">City</label>
+    <input type="text" class="form-control" id="city" placeholder="ABC">
+  </div>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
